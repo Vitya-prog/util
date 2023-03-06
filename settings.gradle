@@ -12,10 +12,8 @@ dependencyResolutionManagement {
         mavenCentral()
         maven {
             url "https://jitpack.io"
-            credentials { username authToken }
         }
     }
 }
 rootProject.name = "util-wolf-saga"
-include ':app'
 include ':util'
