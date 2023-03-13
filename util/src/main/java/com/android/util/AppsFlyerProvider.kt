@@ -15,15 +15,7 @@ object AppsFlyerProvider {
             APPS_FLYER_KEY,
             object : AppsFlyerConversionListener {
                 override fun onConversionDataSuccess(data: MutableMap<String, Any>?) {
-                    val dataObject:MutableMap<String,Any> = mutableMapOf()
-
-                    dataObject["campaign"] = "test1/test2/test3/test4/test5"
-                    dataObject["adset_id"] = "testAdset"
-                    dataObject["campaign_id"] = "testCampaignId"
-                    dataObject["adset"] = "testAdset"
-                    dataObject["adgroup"] = "testAdGroup"
-                    dataObject["media_source"] = "testSource"
-                    trySend(dataObject)
+                    trySend(data)
                 }
 
                 override fun onConversionDataFail(message: String?) {
