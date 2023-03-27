@@ -50,6 +50,9 @@ dependencies {
 
     // Facebook SDK
     implementation 'com.facebook.android:facebook-android-sdk:14.1.1'
+
+    //Tenjin
+    implementation 'com.tenjin:android-sdk:1.12.20'
 }
 
 publishing {
@@ -57,7 +60,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.Vitya-prog'
             artifactId = 'util-wolf-saga'
-            version = '0.0.1'
+            version = '0.0.3'
 
             afterEvaluate {
                 from components.release
